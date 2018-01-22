@@ -42,6 +42,7 @@ use Tuleap\Widget\WidgetFactory;
 
 require_once('pre.php');
 
+$GLOBALS['HTML']->includeFooterJavascriptFile('/scripts/custom1.js');
 $default_content_type = 'text/html';
 
 $project       = null;

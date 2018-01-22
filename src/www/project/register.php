@@ -26,6 +26,8 @@ session_require(array('isloggedin'=>1));
 
 $request = HTTPRequest::instance();
 
+$GLOBALS['HTML']->includeFooterJavascriptFile('/scripts/custom.js');
+
 $router = new Project_OneStepCreation_OneStepCreationRouter(
     ProjectManager::instance(),
     new Project_CustomDescription_CustomDescriptionFactory(new Project_CustomDescription_CustomDescriptionDao()),
